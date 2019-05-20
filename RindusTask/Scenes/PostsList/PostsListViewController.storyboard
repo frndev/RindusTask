@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hUA-vr-YiX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posts List View Controller-->
+        <scene sceneID="3uw-y8-ore">
+            <objects>
+                <viewController storyboardIdentifier="PostsListViewController" id="hUA-vr-YiX" customClass="PostsListViewController" customModule="RindusTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hru-d2-b9h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nKH-PT-Obn">
+                                <rect key="frame" x="16" y="36" width="343" height="631"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="XEv-vT-2Ia">
+                                    <size key="itemSize" width="323" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hUA-vr-YiX" id="2zZ-bA-91l"/>
+                                    <outlet property="delegate" destination="hUA-vr-YiX" id="lcC-8A-tpz"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J9w-QZ-hpZ" firstAttribute="bottom" secondItem="nKH-PT-Obn" secondAttribute="bottom" id="JbK-4j-lWU"/>
+                            <constraint firstItem="nKH-PT-Obn" firstAttribute="top" secondItem="J9w-QZ-hpZ" secondAttribute="top" constant="16" id="URH-8K-3ZL"/>
+                            <constraint firstItem="J9w-QZ-hpZ" firstAttribute="trailing" secondItem="nKH-PT-Obn" secondAttribute="trailing" constant="16" id="teu-VT-IGd"/>
+                            <constraint firstItem="nKH-PT-Obn" firstAttribute="leading" secondItem="J9w-QZ-hpZ" secondAttribute="leading" constant="16" id="xOK-xM-1T2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J9w-QZ-hpZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="nKH-PT-Obn" id="ewb-tZ-0G8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tw4-Co-c4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="6"/>
+        </scene>
+    </scenes>
+</document>

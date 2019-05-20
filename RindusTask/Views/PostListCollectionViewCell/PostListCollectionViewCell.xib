@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostListCollectionViewCell" id="gTV-IL-0wX" customClass="PostListCollectionViewCell" customModule="RindusTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSe-2Y-M2l">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbY-c7-VNM">
+                                <rect key="frame" x="8" y="37.5" width="344" height="112.5"/>
+                                <string key="text">uia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ug-va-9EV">
+                                <rect key="frame" x="8" y="8" width="344" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9ug-va-9EV" secondAttribute="trailing" constant="8" id="2HB-nX-mF8"/>
+                            <constraint firstAttribute="bottom" secondItem="hbY-c7-VNM" secondAttribute="bottom" constant="8" id="4Ee-D9-6pt"/>
+                            <constraint firstItem="9ug-va-9EV" firstAttribute="top" secondItem="eSe-2Y-M2l" secondAttribute="top" constant="8" id="8ay-x8-IzW"/>
+                            <constraint firstAttribute="trailing" secondItem="hbY-c7-VNM" secondAttribute="trailing" constant="8" id="9Tm-2S-o9h"/>
+                            <constraint firstItem="hbY-c7-VNM" firstAttribute="leading" secondItem="eSe-2Y-M2l" secondAttribute="leading" constant="8" id="SFD-0U-O7d"/>
+                            <constraint firstItem="9ug-va-9EV" firstAttribute="leading" secondItem="eSe-2Y-M2l" secondAttribute="leading" constant="8" id="mgR-Tt-VQZ"/>
+                            <constraint firstItem="hbY-c7-VNM" firstAttribute="top" secondItem="9ug-va-9EV" secondAttribute="bottom" constant="8" id="wwe-PM-8ou"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eSe-2Y-M2l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BT9-U2-Nr4"/>
+                <constraint firstAttribute="trailing" secondItem="eSe-2Y-M2l" secondAttribute="trailing" id="D0c-Vw-QFK"/>
+                <constraint firstAttribute="bottom" secondItem="eSe-2Y-M2l" secondAttribute="bottom" placeholder="YES" id="OBS-K9-uog"/>
+                <constraint firstItem="eSe-2Y-M2l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zgg-pE-I4a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="360" height="158"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="eSe-2Y-M2l" id="0sg-Zi-Y2U"/>
+                <outlet property="descriptionLabel" destination="hbY-c7-VNM" id="jER-MR-pLL"/>
+                <outlet property="titleLabel" destination="9ug-va-9EV" id="wHw-Yi-uhv"/>
+            </connections>
+            <point key="canvasLocation" x="385.60000000000002" y="7.1964017991004505"/>
+        </collectionViewCell>
+    </objects>
+</document>
